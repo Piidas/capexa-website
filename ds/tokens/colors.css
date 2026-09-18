@@ -1,0 +1,29 @@
+:root{
+/* Primary — ~90% of any layout */
+--navy:#12202C;--white:#FFFFFF;--black:#000000;
+/* Primary accent */
+--teal:#2D8DA0;
+/* Highlight — one per view; CTAs, links, key figure */
+--orange:#F9912F;--orange-hover:#E07E22;--orange-active:#C86F1B;
+/* Facet palette — charts/graphics only, never text */
+--facet-cyan:#47CCE4;--facet-green:#3F9456;--facet-lime:#99BF49;
+/* Derived neutrals (navy-tinted, for rules, table stripes, muted text) */
+--navy-800:#1B2C3B;--navy-700:#243748;--navy-500:#4A5B6A;--navy-300:#8C9AA6;--navy-150:#C9D0D6;--navy-075:#E4E8EB;--navy-040:#F2F4F5;
+/* Semantic — light (white) sections */
+--bg:var(--white);--bg-alt:var(--navy-040);--surface:var(--white);
+--text:var(--navy);--text-muted:var(--navy-500);--text-label:var(--navy-300);
+--heading:var(--navy);--rule:var(--navy-150);--rule-strong:var(--navy);
+--link:var(--orange);--link-hover:var(--orange-hover);
+--cta-bg:var(--orange);--cta-fg:var(--white);--cta-bg-hover:var(--orange-hover);--cta-bg-active:var(--orange-active);
+--btn-secondary-fg:var(--navy);--btn-secondary-border:var(--navy);
+--focus-ring:var(--teal);
+--status-ok:var(--facet-green);--status-warn:var(--orange);--status-info:var(--teal);--status-risk:var(--black);
+}
+/* Dark (navy) sections: <section data-theme="navy"> */
+[data-theme="navy"]{
+--bg:var(--navy);--bg-alt:var(--navy-800);--surface:var(--navy-800);
+--text:var(--white);--text-muted:var(--navy-150);--text-label:var(--navy-300);
+--heading:var(--white);--rule:var(--navy-700);--rule-strong:var(--white);
+--btn-secondary-fg:var(--white);--btn-secondary-border:var(--white);
+background:var(--bg);color:var(--text);
+}

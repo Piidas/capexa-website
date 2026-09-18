@@ -1,0 +1,15 @@
+:root{
+--sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;--sp-9:96px;--sp-10:128px;
+--section-pad-y:var(--sp-9);--section-pad-x:var(--sp-7);--container-max:1200px;--container-narrow:760px;--grid-gap:var(--sp-5);
+/* Corners: squared. Only inputs/buttons may use the minimal radius. */
+--radius-0:0px;--radius-min:2px;
+/* Borders: hairlines, no shadows */
+--border-w:1px;/* @kind spacing */--border-w-strong:2px;/* @kind spacing */--border:var(--border-w) solid var(--rule);/* @kind other */--border-strong:var(--border-w-strong) solid var(--rule-strong);/* @kind other */
+/* Shadows: none by default; a single flat elevation for floating overlays only */
+--shadow-none:none;--shadow-overlay:0 2px 0 0 rgba(18,32,44,.12);
+/* Motion: restrained */
+--ease:cubic-bezier(.2,0,0,1);/* @kind other */--dur-fast:120ms;/* @kind other */--dur:200ms;/* @kind other */
+/* Logo */
+--logo-min-width:160px;
+}
+*,*::before,*::after{box-sizing:border-box}
